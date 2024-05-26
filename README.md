@@ -8,8 +8,7 @@
 | It compresses data by itself.                                                                                 | It uses HPACK for data compression.                                                                        |
 | One connection per request.The next request slows down until the first response is sent.                      | Uses multiplexing which allows multiple request under single TCP                                           |
 | Headers are sent repeatedly for each request and response even while requesting to the same server.           | Includes header compression, which reduces size of data and time consumed by compressing repeated headers. |
-| Client cannot prioritize the certain stream or resources they want.                                           | This allows to prioritize individual resources which enables efficient                                     |
- resource allocation ensuring critical resources are downloaded first.                                        
+| Client cannot prioritize the certain stream or resources they want.                                           | This allows to prioritize individual resources which enables efficient resource allocation ensuring critical resources are downloaded first.
 
 
 
